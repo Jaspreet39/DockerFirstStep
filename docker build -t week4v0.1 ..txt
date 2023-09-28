@@ -1,0 +1,5 @@
+docker build -t week4:v0.1 .
+
+docker tag week4:v0.1 dockerUsername/week4:v0.1
+
+docker push dockerUsername/week4:v0.1
