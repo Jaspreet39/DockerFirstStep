@@ -5,6 +5,8 @@ FROM golang:1.21.1-alpine as builder
 # set the working directory
 WORKDIR /app
 
+COPY . .
+
 # Build the app
 RUN go build -o myApp
 
