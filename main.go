@@ -10,6 +10,7 @@ func main() {
 	ArrayReverse()
 	TableGenerator()
 	Armstrong()
+	greaterNumber()
 }
 
 // Japsreet's function
@@ -86,4 +87,16 @@ func Armstrong() {
 	}else{
 		fmt.Printf("%d is not an Armstrong number.",number)
 	}
+}
+
+
+func greaterNumber(){
+	var num1 float64 =11.25
+		var num2 float64 =22.14
+			
+		varlarge float64 =0
+
+		large=math.Max(num1, num2)
+		
+		fmt.printf("largest number is :%f",large)
 }
