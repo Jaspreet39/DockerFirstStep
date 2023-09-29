@@ -19,16 +19,10 @@ func main() {
 func authenticator() {
 	var userID int = 500224473
 	var password int = 123456
-	var username int
-	var pass int
+	var idInput int = 500224330
+	var passInput int = 123456
 
-	fmt.Println("Please enter the username:")
-	fmt.Scanln(&username)
-
-	fmt.Println("Please enter the password:")
-	fmt.Scanln(&pass)
-
-	if username == userID && password == pass {
+	if idInput == userID && passInput == password {
 		fmt.Println("you are successfully loggedIn")
 	} else {
 		fmt.Println("Incorrect credentials")
@@ -41,8 +35,7 @@ func fibonacci() {
 	t2 := 1
 	nextTerm := 0
 
-	fmt.Print("Enter the number of terms : ")
-	fmt.Print("Fibonacci Series :")
+	fmt.Print("Fibonacci Series of 5 terms :")
 	for i := 1; i <= n; i++ {
 		if i == 1 {
 			fmt.Print(" ", t1)
@@ -61,26 +54,28 @@ func fibonacci() {
 
 func ArrayReverse() {
 
-	fmt.Println("Interger Reverse Sort")
 	num := []int{50, 90, 30, 10, 50}
+	fmt.Println("Initial Integer Array: ")
+	fmt.Println(num)
+	fmt.Println("Integer Reverse Sort")
 	sort.Sort(sort.Reverse(sort.IntSlice(num)))
 	fmt.Println(num)
 
 	fmt.Println()
 
-	fmt.Println("String Reverse Sort")
 	text := []string{"Japan", "UK", "Germany", "Australia", "Pakistan"}
+	fmt.Println("Initial String Array: ")
+	fmt.Println(text)
+	fmt.Println("String Reverse Sort")
 	sort.Sort(sort.Reverse(sort.StringSlice(text)))
 	fmt.Println(text)
 
 }
 
 func TableGenerator() {
-	var n int
-	fmt.Print("Enter any Integer Number : ")
-	fmt.Scan(&n)
+	var n int = 5
+	fmt.Println("Table of 5: ")
 	i := 1
-	/*     For loop as a Go's While     */
 	for {
 		if i > 10 {
 			break
@@ -91,10 +86,10 @@ func TableGenerator() {
 }
 
 func Armstrong() {
-	var number, tempNumber, remainder int
+	var tempNumber, remainder int
 	var result int = 0
-	fmt.Print("Enter any three digit number : ")
-	fmt.Scan(&number)
+	var number int = 153
+	fmt.Print("To check whether 153 in Armstrong or not: ")
 
 	tempNumber = number
 
@@ -123,5 +118,5 @@ func greaterNumber() {
 
 	large = math.Max(num1, num2)
 
-	fmt.Printf("largest number is : %f", large)
+	fmt.Printf("larger number among 11.25 & 22.14 is : %f", large)
 }
