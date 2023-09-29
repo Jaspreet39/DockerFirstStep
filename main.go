@@ -8,6 +8,7 @@ import (
 func main() {
 	authenticator()
 	ArrayReverse()
+	TableGenerator()
 }
 
 // Japsreet's function
@@ -44,4 +45,19 @@ func ArrayReverse() {
 	sort.Sort(sort.Reverse(sort.StringSlice(text)))
 	fmt.Println(text)
 
+}
+
+func TableGenerator() {
+	var n int
+	fmt.Print("Enter any Integer Number : ")
+	fmt.Scan(&n)
+	i := 1
+	/*     For loop as a Go's While     */
+	for {
+		if i > 10 {
+			break
+		}
+		fmt.Println(n, " X ", i, " = ", n*i)
+		i++
+	}
 }
