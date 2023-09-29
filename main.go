@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"sort"
 )
 
@@ -65,38 +66,37 @@ func TableGenerator() {
 }
 
 func Armstrong() {
-	var number,tempNumber,remainder int
-	var result int =0
+	var number, tempNumber, remainder int
+	var result int = 0
 	fmt.Print("Enter any three digit number : ")
 	fmt.Scan(&number)
 
 	tempNumber = number
-	
+
 	for {
-		remainder = tempNumber%10
-		result += remainder*remainder*remainder		
-		tempNumber /=10
-		
-		if(tempNumber==0){
-			break 
+		remainder = tempNumber % 10
+		result += remainder * remainder * remainder
+		tempNumber /= 10
+
+		if tempNumber == 0 {
+			break
 		}
 	}
 
-	if(result==number){
-		 fmt.Printf("%d is an Armstrong number.",number)
-	}else{
-		fmt.Printf("%d is not an Armstrong number.",number)
+	if result == number {
+		fmt.Printf("%d is an Armstrong number.", number)
+	} else {
+		fmt.Printf("%d is not an Armstrong number.", number)
 	}
 }
 
+func greaterNumber() {
+	var num1 float64 = 11.25
+	var num2 float64 = 22.14
 
-func greaterNumber(){
-	var num1 float64 =11.25
-		var num2 float64 =22.14
-			
-		varlarge float64 =0
+	var large float64 = 0
 
-		large=math.Max(num1, num2)
-		
-		fmt.Println("largest number is :%f",large)
+	large = math.Max(num1, num2)
+
+	fmt.Println("largest number is : %f", large)
 }
