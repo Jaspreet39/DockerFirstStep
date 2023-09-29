@@ -98,5 +98,5 @@ func greaterNumber(){
 
 		large=math.Max(num1, num2)
 		
-		fmt.printf("largest number is :%f",large)
+		fmt.Println("largest number is :%f",large)
 }
