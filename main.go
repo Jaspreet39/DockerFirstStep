@@ -12,7 +12,7 @@ func main() {
 	TableGenerator()
 	Armstrong()
 	greaterNumber()
-        fibonacci()
+	fibonacci()
 }
 
 // Japsreet's function
@@ -123,5 +123,5 @@ func greaterNumber() {
 
 	large = math.Max(num1, num2)
 
-	fmt.Println("largest number is : %f", large)
+	fmt.Printf("largest number is : %f", large)
 }
